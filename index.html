@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beck sport</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body class="flow">
+  <section class="header">
+    <img class="logo" src="https://www.fearfreehappyhomes.com/wp-content/uploads/2020/08/shutterstock_707431309-e1554172878508.jpg" alt="beck sport">
+    <h1 class="brand">Beck sport</h1>
+  </section>
+
+  <form class="qr-form" id="form-qr">
+    <div class="field">
+      <label class="field__label" for="input-destination-account">Chủ tk</label>
+      <input class="field__control" type="text" id="input-destination-account">
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="input-transfer-content">Nội dung</label>
+      <input class="field__control" type="text" id="input-transfer-content">
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="input-transfer-amount">Số tiền</label>
+      <input class="field__control" type="text" id="input-transfer-amount">
+    </div>
+
+    <div class="field">
+      <button class="field__submit" type="submit">Tạo mã</button>
+    </div>
+  </form>
+
+  <section class="banks">
+    <ul>
+      <li>
+        <dt class="bank-name">VIETCOM</dt>
+        <dd class="bank-number">1111 51 41 31</dd>
+      </li>
+      <li>
+        <dt class="bank-name">MBBANK</dt>
+        <dd class="bank-number">1111 51 41 31</dd>
+      </li>
+      <li>
+        <dt class="bank-name">VPBANK</dt>
+        <dd class="bank-number">1111 51 41 31</dd>
+      </li>
+    </ul>
+  </section>
+
+  <section class="qr">
+    <p class="qr-brand">VIETQR</p>
+    <img class="qr-image" id="qr-image" src="" alt="qr image">
+    <ul class="qr-info">
+      <li>Dùng bất kỳ app ngân hàng quét mã QR này, ae sẽ không cần nhập thủ công các thông tin ở bên trên</table>
+      </li>
+      <li>Vui lòng để nội dung CK đúng theo hướng dẫn</li>
+      <li>Đây không phải mã VNPAY</li>
+    </ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
