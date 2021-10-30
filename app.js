@@ -1,12 +1,13 @@
 let form = document.getElementById("form-qr");
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    let accountName = "Vu Dinh Toan";
+    let accountName = "Vũ Đình Toàn";
+    // accountName = "Vu Dinh Toan";
     let content = document.getElementById("input-transfer-content").value;
     let amount = document.getElementById("input-transfer-amount").value;
     let bankName = "Vietcombank";
     let bankNumber = "1111514131";
     let img = document.getElementById("qr-image");
-    let imageUrl = `https://api.vietqr.io/${bankName}/${bankNumber}/${amount}/${content}/vietqr_net_2.jpg?accountName=${accountName}`;
+    let imageUrl = `https://api.vietqr.io/${bankName}/${bankNumber}/${amount}/${content}/vietqr_net_2.jpg?accountName=${encodeURI(accountName)}`;
     img.src = imageUrl;
 });
