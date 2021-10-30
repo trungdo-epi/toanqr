@@ -1,7 +1,7 @@
 let form = document.getElementById("form-qr");
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    let accountName = "Vũ Đình Toàn";
+    let accountName = "Vu Dinh Toan";
     let content = document.getElementById("input-transfer-content").value;
     let amount = document.getElementById("input-transfer-amount").value;
     let bankName = "Vietcombank";
