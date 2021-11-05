@@ -1,4 +1,18 @@
 let form = document.getElementById("form-qr");
+form.addEventListener("keydown", (event) => {
+    let key = event.key;
+
+    if (key == "Enter") {
+        let activeElm = document.activeElement
+        let content = document.getElementById("input-transfer-content");
+        let amount = document.getElementById("input-transfer-amount");
+        if (activeElm == content && amount.value == "") {
+            amount.focus();
+            event.preventDefault();
+        }
+    }
+});
+
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     let accountName = "Vũ Đình Toàn";
