@@ -72,12 +72,26 @@ select {
 }
 
 body {
-  display: grid;
-  padding: 0 1em;
+  min-height: 100vh;
+  padding: 0 0.5em;
+  background-color: #ffc82e;
+  max-width: 40em;
+  margin: auto auto;
 }
 
 ul {
   margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Cabin;
+  src: url("fonts/Cabin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Baloo;
+  src: url("fonts/Baloo.ttf") format("truetype");
 }
 
 .flow > * + * {
@@ -85,14 +99,14 @@ ul {
 }
 
 .header {
+  margin-top: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .logo {
-  width: 5em;
-  height: 3em;
+  width: 90%;
 }
 
 .brand {
@@ -104,12 +118,40 @@ ul {
   margin-top: 0.5em;
 }
 
+.qr-form {
+  padding: 0 2em;
+}
+
+.field__label {
+  font-family: Cabin;
+  font-size: 1.375rem;
+  width: 35%;
+}
+
 .field__control {
-  flex: 1;
-  margin-left: 1em;
+  width: 60%;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 1.375rem;
+  font-family: Baloo;
+}
+
+.field__control[readonly] {
+  font-family: Cabin;
+}
+
+.banks {
+  padding: 0 1.6em;
+  font-family: Baloo;
+  font-size: 1.375rem;
 }
 
 .banks li {
+  margin-top: 1.2em;
+}
+
+.banks li > div {
   display: flex;
 }
 
@@ -124,7 +166,7 @@ ul {
 
 .qr {
   display: grid;
-  grid-template: "brand info" 2em "image info" auto / 1fr 2fr;
+  grid-template: "brand info" auto "image info" auto / 1fr 2fr;
 }
 
 .qr .qr-brand {
@@ -140,6 +182,17 @@ ul {
 }
 
 .qr .qr-info {
-  font-size: 0.875em;
+  margin-left: 1.4em;
+  font-family: Cabin;
+}
+
+.qr .qr-brand {
+  margin-left: 0.5em;
+  max-height: 2em;
+}
+
+.qr .qr-image {
+  margin-top: 0.5em;
+  display: block;
 }
 /*# sourceMappingURL=app.css.map */

@@ -12,11 +12,15 @@
 
 <body class="flow">
   <section class="header">
-    <img class="logo" src="https://www.fearfreehappyhomes.com/wp-content/uploads/2020/08/shutterstock_707431309-e1554172878508.jpg" alt="beck sport">
-    <h1 class="brand">Beck sport</h1>
+    <img class="logo" src="img/logo.png" alt="beck sport">
   </section>
 
   <form class="qr-form" id="form-qr">
+    <div class="field">
+      <label class="field__label" for="input-account-name">Chủ TK</label>
+      <input class="field__control" type="text" id="input-account-name" value="Vũ Đình Toàn" readonly>
+    </div>
+
     <div class="field">
       <label class="field__label" for="input-transfer-content">Nội dung</label>
       <input class="field__control" type="text" id="input-transfer-content">
@@ -35,23 +39,29 @@
   <section class="banks">
     <ul>
       <li>
-        <dt class="bank-name">VIETCOM</dt>
-        <dd class="bank-number">1111 51 41 31</dd>
+        <div>
+          <dt class="bank-name">VIETCOM</dt>
+          <dd class="bank-number">1111 51 41 31</dd>
+        </div>
       </li>
       <li>
-        <dt class="bank-name">MBBANK</dt>
-        <dd class="bank-number">1111 51 41 31</dd>
+        <div>
+          <dt class="bank-name">MBBANK</dt>
+          <dd class="bank-number">1111 51 41 31</dd>
+        </div>
       </li>
       <li>
-        <dt class="bank-name">VPBANK</dt>
-        <dd class="bank-number">1111 51 41 31</dd>
+        <div>
+          <dt class="bank-name">VPBANK</dt>
+          <dd class="bank-number">1111 51 41 31</dd>
+        </div>
       </li>
     </ul>
   </section>
 
   <section class="qr">
-    <p class="qr-brand">VIETQR</p>
-    <img class="qr-image" id="qr-image" src="" alt="qr image">
+    <img class="qr-brand" src="img/vietqr.png" alt="vietqr">
+    <img class="qr-image" id="qr-image" src="img/qr.svg" alt="qr image">
     <ul class="qr-info">
       <li>Dùng bất kỳ app ngân hàng quét mã QR này, ae sẽ không cần nhập thủ công các thông tin ở bên trên</table>
       </li>
